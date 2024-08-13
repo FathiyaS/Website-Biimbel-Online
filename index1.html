@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/style1.css" type = "text/css">
+
+</head>
+<body>
+    <form method="POST", action ="/data_pelajar/tambah">
+        <h1>Pendaftaran Bimbel Online Jenjang SMA/SMK/MA/sederajat</h1>
+
+        <legend><h2>Registrasi</h2></legend>
+        <hr>
+        <fieldset>
+            <label>Nama</label><br>
+            <input type="text" name="Nama" placeholder="Nama lengkap Anda" /><br>
+            <label>Username </label><br>
+            <input type="text" name="Username" placeholder="Username anda" /><br>
+            <label>Email </label><br>
+            <input type="email" name="Email" placeholder="Email anda" /><br>
+            <label>Password  </label><br>
+            <input type="password" name="Password" placeholder="Password yang akan digunakan" /></br>
+            <label>No.Hp  </label><br>
+            <input type="text" name="Nohp" placeholder="+62" /><br>
+            <label> Alamat  </label><br>
+            <textarea  style="width: 250; height: 100;" name="Alamat" placeholder="Jl."/ ></textarea><br>
+            <label>Jenis Kelamin  :</label><br>
+            <select name="JenisKelamin"><br>
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select><br>
+            
+            <label>Agama  :</label><br>
+            <select name="Agama"><br>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select><br>
+            <label>Tanggal Lahir :</label><br>
+            <input type="date" name="TanggalLahir" /><br>
+            <label>Kelas :</label><br>
+            <select name="Kelas"><br>
+                <option value="Kelas 10">Kelas 10</option>
+                <option value="Kelas 11">Kelas 11</option>
+                <option value="Kelas 12">Kelas 12</option>
+            </select><br>
+        </fieldset>
+        <legend><h2>Pembayaran</h2></legend>
+        <hr>
+        <fieldset>
+            <label>Kelas Bimbel :</label><br>
+            <select name="KelasBimbel"><br>
+                <option value="Reguler">Reguler (700k)</option>
+                <option value="Non Reguler">Non Reguler (800k)</option>               
+            </select><br>
+            
+            <label>Metode Pembayaran :</label><br>
+            <select name="Metode"><br>
+                <option value="Dana">Dana (085172041077)</option>
+                <option value="Transfer Bank">Transfer Bank (7672-01-011558-58-5)</option>               
+            </select><br>
+        
+           
+        </fieldset>
+        <button><input type="submit" name="submit" value="Daftar" /></button>
+        
+
+
+        
+    </form>
+</body>
+</html>
